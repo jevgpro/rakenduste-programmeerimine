@@ -1,3 +1,1 @@
-
-Tere
-new add
+Heroku app URL: http://jevshop.herokuapp.com/
