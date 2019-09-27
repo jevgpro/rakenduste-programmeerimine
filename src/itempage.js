@@ -1,3 +1,5 @@
+console.log("item.js loaded");
+
 //alert("Welcome to item page!");
 const x =  window.location;
 console.log(x);
@@ -5,7 +7,8 @@ const urlParams = new URLSearchParams(window.location.search);
 const title = urlParams.get("title");
 const cost = urlParams.get("cost");
 const src = urlParams.get("src");
-console.log(title, cost, src);
+// const src = urlParams.get("description");
+// console.log(description);
 //alert("title : " + title + "cost : " + cost + "path : " + src);
 
 const container = document.createElement('div');
