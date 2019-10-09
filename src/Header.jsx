@@ -1,10 +1,13 @@
 
 import React from "react";
+import {Link} from "react-router-dom";
 const Header = () => {
     return(
         <div className="header">
-        <img class="header_logo" src="./images/logo.jpg" />
-        <div class="header_buttons">
+            <Link to={"/"}>
+            <img className="header_logo" src="./images/logo.jpg" />
+            </Link>
+        <div className="header_buttons">
             <button>Login/Signup</button>
             <button>Cart</button>
         </div>

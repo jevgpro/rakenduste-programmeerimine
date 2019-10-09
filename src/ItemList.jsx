@@ -18,7 +18,7 @@ const ItemList = (props) => {
 
 const Item = (props) => {
     return (
-        <Link>
+        <Link to={"/item"}>
         <div className={"item"}>
             <img src={props.imgSrc}/>
             <div className="item__title">{props.title}</div>
