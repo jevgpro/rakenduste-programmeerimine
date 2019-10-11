@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 class ItemPage extends React.PureComponent{
     componentDidMount(){
-        fetch("/api/items/${this.props.match.params.itemId}")
+        fetch(`/api/items/${this.props.match.params.itemId}`)
         .then( res =>{
             return res.json();
         })

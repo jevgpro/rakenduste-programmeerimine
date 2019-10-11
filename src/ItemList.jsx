@@ -3,12 +3,14 @@ import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
 
 const ItemList = (props) => {
+    console.log("item list", props);
     return (
         <div className={"content"}>
             {
                 props.items.map( item => {
                 return <Item 
                 key={item.id}
+                id={item.id}
                 imgSrc={item.imgSrc}
                 price={item.price}
                 title={item.title}
@@ -25,7 +27,7 @@ ItemList.propTypes = {
 
 const Item = (props) => {
     return (
-        <Link to={"/items/{props.id}"}>
+        <Link to={`/items/${props.id}`}>
         <div className={"item"}>
             <img src={props.imgSrc}/>
             <div className="item__title">{props.title}</div>

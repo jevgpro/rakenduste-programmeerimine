@@ -7,14 +7,14 @@ const getItems = () => {
     const items = [];
     phones.forEach( (phone, index)=>{
         items.push({
-            phone,
+            ...phone,
             id: "phones-"+index,
             category: "phones"
         })
     });
     laptops.forEach( (laptop, index)=>{
         items.push({
-            laptop,
+            ...laptop,
             id: "laptops-"+index,
             category: "laptops"
         })
